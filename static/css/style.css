@@ -1,18 +1,19 @@
 /* style for all paragraphs */
 p{
-    color: skyblue;
-    font-size: 14px;
+    color: cornflowerblue;
+    font-size: 16px;
 }
 
 /* style color for level 1 header */
 h1 {
     color: #08306B;
+    font-size: 36px;
 }
 
 /* style for all level 2 headers */
 h2 {
     color: #4292C6;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -37,7 +38,7 @@ p#third {
 
 /* new rule block based off class attribute */
 .highlight {
-    color: #64e3a1;
+    color: #238b45;
     font-weight: bold;
 }
 
