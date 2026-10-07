@@ -17,3 +17,10 @@ def about():  # put application's code here
 
 if __name__ == '__main__':
     app.run()
+
+@app.route('/about-css')
+def about_css():  # put application's code here
+    return render_template('about-css.html')
+
+if __name__ == '__main__':
+    app.run()
