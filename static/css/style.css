@@ -1,0 +1,48 @@
+/* style for all paragraphs */
+p{
+    color: skyblue;
+    font-size: 14px;
+}
+
+/* style color for level 1 header */
+h1 {
+    color: #08306B;
+}
+
+/* style for all level 2 headers */
+h2 {
+    color: #4292C6;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* style for table: solid border with border color*/
+table, td, th {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2171B5;
+    border-collapse: collapse;
+}
+
+/* needed for spacing inside the table cells */
+td, th {
+    padding: 8px;
+}
+
+/* style for only the third paragraph*/
+p#third {
+    text-decoration: underline;
+    color: #08519c;
+}
+
+/* new rule block based off class attribute */
+.highlight {
+    color: #64e3a1;
+    font-weight: bold;
+}
+
+/* logo image class image tag */
+img.logo {
+    width: 267px;
+    height: 72px;
+}
