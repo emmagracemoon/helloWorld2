@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Contact Me | Emma Moon{% endblock %}
+{% block content %}
+    {% if first_name %}
+        <h1>Thank You!</h1>
+        <div class="success-box">
+            <strong>Submission received!</strong>
+            <p class="mb-0">Thank you for taking the time to reach out.</p>
+        </div>
+        <h5>Your Information</h5>
+        <div class="info-box">
+            <p><strong>First Name:</strong> {{ first_name }}</p>
+            <p><strong>Last Name:</strong> {{ last_name }}</p>
+            <p><strong>Email Address:</strong> {{ email }}</p>
+            <p><strong>Message:</strong> {{ message }}</p>
+        </div>
+
+    {% else %}
+        <h1>Contact Me!</h1>
+        <p class="subtitle">Please fill out the form below.</p>
+
+        <form action="/contact" method="POST">
+            <div class="mb-3">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" class="form-control"
+                       id="first_name" name="first_name">
+            </div>
+            <div class="mb-3">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-control"
+                       id="last_name" name="last_name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control"
+                       id="email" name="email">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control"
+                          id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Submit
+            </button>
+        </form>
+    {% endif %}
+{% endblock %}
