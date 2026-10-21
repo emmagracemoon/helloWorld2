@@ -45,7 +45,7 @@ def contact():
             email=email,
             message=message)
 
-    return render_template('contact.html')
+    return render_template('contact.html', submitted=False)
 
 
 if __name__ == '__main__':

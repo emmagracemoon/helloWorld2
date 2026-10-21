@@ -1,20 +1,21 @@
 {% extends "base.html" %}
 {% block title %}Contact Me | Emma Moon{% endblock %}
 {% block content %}
-    {% if first_name %}
+    {% if submitted %}
         <h1>Thank You!</h1>
+
         <div class="success-box">
             <strong>Submission received!</strong>
-            <p class="mb-0">Thank you for taking the time to reach out.</p>
+            <p>Thank you for taking the time to reach out.</p>
         </div>
-        <h5>Your Information</h5>
+
         <div class="info-box">
+            <h2>Your Information</h2>
             <p><strong>First Name:</strong> {{ first_name }}</p>
             <p><strong>Last Name:</strong> {{ last_name }}</p>
             <p><strong>Email Address:</strong> {{ email }}</p>
             <p><strong>Message:</strong> {{ message }}</p>
         </div>
-
     {% else %}
         <h1>Contact Me!</h1>
         <p class="subtitle">Please fill out the form below.</p>

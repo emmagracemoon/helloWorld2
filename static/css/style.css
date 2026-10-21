@@ -143,3 +143,17 @@ h1, h2, h3, h4, h5 {
     margin: 20px 0;
     color: #285b3b;
 }
+
+.success-box p {
+    color: inherit;
+    margin: 6px 0 0 0;
+}
+
+.info-box p {
+    color: #243b5a;
+}
+
+.info-box h2 {
+    text-decoration: none;
+    margin-bottom: 16px;
+}
